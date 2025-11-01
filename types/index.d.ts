@@ -191,9 +191,15 @@ declare interface AuthFormProps {
   type: "sign-in" | "sign-up";
 }
 
-declare interface BankDropdownProps {
+
+interface FormValues {
+  accountId: string;
+  amount: number;
+}
+
+export interface BankDropdownProps {
   accounts: Account[];
-  setValue?: UseFormSetValue<any>;
+  setValue?: UseFormSetValue<FormValues>;
   otherStyles?: string;
 }
 
