@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { sidebarLinks } from "../../constants";
-import { cn } from "../../lib/utils";
+import { cn } from "../lib/utils";
 import { usePathname } from "next/navigation";
 
 const SideBar = ({ user }: SiderbarProps) => {

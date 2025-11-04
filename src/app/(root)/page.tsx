@@ -1,3 +1,4 @@
+import RightSideBar from '@/components/RightSideBar'
 import HeaderBox from '../../components/HeaderBox'
 import TotalBalanceBox from '../../components/TotalBalanceBox'
 
@@ -20,6 +21,11 @@ const Home = () => {
                     />
                 </header>
             </div>
+            <RightSideBar
+            user={loggedIn}
+            transactions={[]}
+            banks={[]}
+            />
         </section>
     )
 }
